@@ -22,5 +22,5 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
-ENTRYPOINT uvicorn nappower.main:app --host 0.0.0.0
+ENV PORT 8080
+ENTRYPOINT uvicorn nappower.main:app --host 0.0.0.0 --port 8080
