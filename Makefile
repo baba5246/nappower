@@ -22,7 +22,7 @@ deploy-prod:
 .PHONY: deploy-dev ## Deploy to Cloud Run with 'dev' tag
 deploy-dev:
 	gcloud builds submit --tag gcr.io/$(PROJECT)/$(IMAGE_NAME):dev --project $(PROJECT)
-	gcloud run deploy $(IMAGE_NAME) --region asia-northeast1 --image gcr.io/$(PROJECT)/$(IMAGE_NAME):dev --platform managed
+	gcloud run deploy $(IMAGE_NAME)-dev --region asia-northeast1 --image gcr.io/$(PROJECT)/$(IMAGE_NAME):dev --platform managed
 
 .PHONY: help ## View help
 help:
