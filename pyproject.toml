@@ -8,6 +8,8 @@ authors = ["baba5246 <baba_writer@yahoo.co.jp>"]
 python = "^3.7"
 fastapi = "^0.61.1"
 uvicorn = "^0.12.2"
+jinja2 = "^2.11.2"
+aiofiles = "^0.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
